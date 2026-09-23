@@ -21,30 +21,13 @@ Seeded by migrations `022`, `029`, `032` and `037` — they exist as soon as
 demo fixtures with per-account passwords; no real person's credentials are in
 this repo.
 
-| Role | Email | Password | Notes |
+| Role | Name | Email | Password |
 |---|---|---|---|
-| Admin | `steven.tan.admin@emservices.sg` | `ChocoPizza_54` | Lands on `/admin/costs` |
-| Manager | `rachel.lim.manager@emservices.sg` | `Beacon15!Sail` | Rachel Lim — triage, assignment, closing |
-| Inspector | `weijie.tan.inspector@emservices.sg` | `Falcon77!Reed` | Wei Jie Tan |
-| Inspector | `nurul.aisyah.inspector@emservices.sg` | `Marble46#Dawn` | Nurul Aisyah |
-| Resident | `tan.weiming@mail.sg` | `Cedar88#Pine` | Tan Wei Ming — Blk 44A #12-05 |
-| Resident | `nurul.huda@mail.sg` | `Lotus52!Brook` | Nurul Huda — Blk 44B #07-112 |
-| Contractor | `sarah.chen@otisservice.sg` | `Willow24#Fern` | Sarah Chen — Otis Service SG |
-| Contractor | `grace.ho@schindlerlifts.sg` | `Quartz39#Moss` | Grace Ho — Schindler Lifts SG |
-| Contractor | `wei.jie.lim@otiselevator.sg` | `Cobalt58!Reef` | Wei Jie Lim — Otis Elevator Co. |
-| Contractor | `priya.nair@kone-sg.com` | `Nimbus93#Kite` | Priya Nair — KONE Pte Ltd |
-| Contractor | `marcus.tan@konemaint.com.sg` | `Harbor72!Vale` | Marcus Tan — KONE Maintenance |
-| Contractor | `ahmad.faizal@schindlercare.sg` | `Ember61!Trail` | **Suspended on purpose** — signing in shows the UC-012 "access revoked" screen instead of the portal. Use it to check the suspension guard |
-
-**Ahmad Faizal is the only suspended account.** Every other login above reaches
-its own workspace. If a second one ever refuses to sign in, it was suspended by
-hand through the admin vendor screen rather than by the seed — reactivate it
-there. Note that `npm run migrate` re-asserts Ahmad's suspension on every run
-(migration `043`), so reactivating *him* does not stick; that is deliberate, as
-he is the fixture the UC-012 lockout is demonstrated with.
-
-A second admin (`sophia_collins@admin.com`) is documented in
-[backend/SEED_ADMIN.md](./backend/SEED_ADMIN.md).
+| Manager | Rachel Lim | `rachel.lim.manager@emservices.sg` | `Beacon15!Sail` |
+| Inspector | Wei Jie Tan | `weijie.tan.inspector@emservices.sg` | `Falcon77!Reed` |
+| Resident | Tan Wei Ming (Blk 44A #12-05) | `tan.weiming@mail.sg` | `Cedar88#Pine` |
+| Contractor | Sarah Chen (Otis Service SG) | `sarah.chen@otisservice.sg` | `Willow24#Fern` |
+| Admin | Estate Admin | `steven.tan.admin@emservices.sg` | `ChocoPizza_54` |
 
 To try the roles against each other: file a report as a resident, triage and
 assign it as the manager, complete it as the assigned contractor, review it as
